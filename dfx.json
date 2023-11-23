@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "LearningBlockChain_backend": {
+      "main": "src/LearningBlockChain_backend/main.mo",
+      "type": "motoko"
+    },
+    "LearningBlockChain_frontend": {
+      "dependencies": [
+        "LearningBlockChain_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/LearningBlockChain_frontend/src/index.html"
+      },
+      "source": [
+        "src/LearningBlockChain_frontend/assets",
+        "dist/LearningBlockChain_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
